@@ -7,6 +7,12 @@ import 'screens/dashboard_screen.dart';
 import 'screens/customer_detail_screen.dart';
 import 'screens/checklist_screen.dart';
 import 'screens/profile_screen.dart';
+import 'screens/visit_timeline_screen.dart';
+import 'screens/magic_tools_screen.dart';
+import 'screens/certification_screen.dart';
+import 'screens/rvt_screen.dart';
+import 'screens/exceptions_screen.dart';
+import 'screens/co_chat_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,6 +32,14 @@ class FieldPlusApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: AppTheme.lightTheme,
         home: const MainNavigator(),
+        routes: {
+          '/visit-timeline': (context) => const VisitTimelineScreen(),
+          '/magic-tools': (context) => const MagicToolsScreen(),
+          '/certification': (context) => const CertificationScreen(),
+          '/rvt': (context) => const RVTScreen(),
+          '/exceptions': (context) => const ExceptionsScreen(),
+          '/co-chat': (context) => const COChatScreen(),
+        },
       ),
     );
   }

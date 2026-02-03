@@ -101,6 +101,10 @@ class AIInsightCard extends StatelessWidget {
         return AppTheme.info;
       case InsightType.recommendation:
         return AppTheme.success;
+      case InsightType.success:
+        return AppTheme.success;
+      case InsightType.info:
+        return AppTheme.info;
     }
   }
 
@@ -114,6 +118,10 @@ class AIInsightCard extends StatelessWidget {
         return Icons.lightbulb_outline;
       case InsightType.recommendation:
         return Icons.auto_awesome;
+      case InsightType.success:
+        return Icons.check_circle_outline;
+      case InsightType.info:
+        return Icons.info_outline;
     }
   }
 }

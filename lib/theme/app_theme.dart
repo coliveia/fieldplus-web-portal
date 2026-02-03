@@ -5,6 +5,8 @@ class AppTheme {
   // Primary Colors - Purple/Pink palette
   static const Color primaryPurple = Color(0xFF9F7AEA);
   static const Color primaryPink = Color(0xFFED64A6);
+  static const Color accentPink = Color(0xFFED64A6);
+  static const Color textDark = Color(0xFF1A202C);
   static const Color darkPurple = Color(0xFF6B46C1);
   static const Color lightPurple = Color(0xFFE9D8FD);
   
